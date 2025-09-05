@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Minton's Capstone E-Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f9;
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3rem;
+            height: 3px;
+            background-color: #3b82f6; /* Tailwind's blue-500 */
+            border-radius: 9999px;
+        }
+        .narrative-card {
+            background-color: #f0f4f8; /* Light blue-gray for the narrative */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Matthew Minton</a>
+            <div class="mt-4 sm:mt-0 flex gap-4 sm:gap-6">
+                <a href="#self-assessment" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">Self-Assessment</a>
+                <a href="#code-review" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">Code Review</a>
+                <a href="#enhancements" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">Enhancements</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-10 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-20">
+            <img src="https://placehold.co/150x150/d1d5db/4b5563?text=MM" alt="Matthew Minton" class="rounded-full mx-auto shadow-lg mb-6 border-4 border-white">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Hello, I'm Matthew Minton</h1>
+            <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">A Computer Science student presenting my capstone e-portfolio and professional self-assessment.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#self-assessment" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md">View E-Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Professional Self-Assessment -->
+        <section id="self-assessment" class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-20">
+            <h2 class="text-3xl font-bold section-header">Professional Self-Assessment</h2>
+            <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                <p>
+                    This is where you will write your professional self-assessment, which serves as the holistic introduction to your portfolio. It should discuss your journey through the Computer Science program and how your coursework has prepared you for a career in the field.
+                </p>
+                <p>
+                    Be sure to address topics such as collaboration, communication with stakeholders, and skills in data structures, algorithms, software engineering, databases, and security. Use this space to also summarize how your artifacts fit together to demonstrate your full range of skills.
+                </p>
+            </div>
+        </section>
+
+        <!-- Code Review Video -->
+        <section id="code-review" class="mb-20">
+            <h2 class="text-3xl font-bold section-header">Code Review</h2>
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 text-center">
+                <p class="text-gray-700 mb-4">
+                    Below is my code review video, where I walk through the existing functionality of my original artifact and outline the planned enhancements.
+                </p>
+                <!-- Placeholder for a video embed. Replace with your actual YouTube or Vimeo embed code. -->
+                <div class="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-96"></iframe>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">
+                    (Note: Please replace the `src` URL with the embed code for your actual video.)
+                </p>
+            </div>
+        </section>
+
+        <!-- Enhancements Section -->
+        <section id="enhancements" class="mb-20">
+            <h2 class="text-3xl font-bold section-header">Artifact Enhancements</h2>
+            
+            <!-- Enhancement 1: Software Design and Engineering -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold mb-2">Enhancement 1: Software Design and Engineering</h3>
+                <p class="text-gray-700 mb-4">
+                    This enhancement demonstrates my skills in software design and engineering by (e.g., expanding the project's complexity, transferring it to a new language, etc.).
+                </p>
+                <div class="space-y-4 text-gray-700">
+                    <div>
+                        <h4 class="font-semibold text-lg">Description of Enhanced Artifact:</h4>
+                        <p class="pl-4">Briefly describe the artifact and the specific changes you made for this enhancement. Explain the new functionality.</p>
+                    </div>
+                    <div class="narrative-card p-6 rounded-xl">
+                        <h4 class="font-semibold text-lg mb-2">Narrative:</h4>
+                        <p class="text-sm">
+                            Write your narrative here, addressing the rubric points: justify the inclusion of this artifact, reflect on the enhancement process, discuss challenges you faced, and highlight the course outcomes met.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                    <a href="https://github.com/your-github/enhanced-artifact" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md">View Enhanced Code &rarr;</a>
+                    <a href="https://github.com/your-github/original-artifact" target="_blank" class="bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-full text-center hover:bg-gray-300 transition-all duration-300 transform hover:scale-105 shadow-md">View Original Code &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Enhancement 2: Algorithms and Data Structures -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold mb-2">Enhancement 2: Algorithms and Data Structures</h3>
+                <p class="text-gray-700 mb-4">
+                    This enhancement focuses on improving the efficiency and complexity of my project's algorithms and data structures.
+                </p>
+                <div class="space-y-4 text-gray-700">
+                    <div>
+                        <h4 class="font-semibold text-lg">Description of Enhanced Artifact:</h4>
+                        <p class="pl-4">Explain the original algorithm/data structure and how you improved it for your enhancement. Discuss the performance benefits.</p>
+                    </div>
+                    <div class="narrative-card p-6 rounded-xl">
+                        <h4 class="font-semibold text-lg mb-2">Narrative:</h4>
+                        <p class="text-sm">
+                            Write your narrative here, addressing the rubric points: justify the inclusion of this artifact, reflect on the enhancement process, discuss challenges you faced, and highlight the course outcomes met.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                    <a href="https://github.com/your-github/enhanced-artifact" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md">View Enhanced Code &rarr;</a>
+                    <a href="https://github.com/your-github/original-artifact" target="_blank" class="bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-full text-center hover:bg-gray-300 transition-all duration-300 transform hover:scale-105 shadow-md">View Original Code &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Enhancement 3: Databases -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold mb-2">Enhancement 3: Databases</h3>
+                <p class="text-gray-700 mb-4">
+                    This enhancement demonstrates my ability to use advanced database concepts to solve a problem.
+                </p>
+                <div class="space-y-4 text-gray-700">
+                    <div>
+                        <h4 class="font-semibold text-lg">Description of Enhanced Artifact:</h4>
+                        <p class="pl-4">Describe the database-related enhancement you made, such as adding a new database technology, implementing data mining, or building a full-stack solution.</p>
+                    </div>
+                    <div class="narrative-card p-6 rounded-xl">
+                        <h4 class="font-semibold text-lg mb-2">Narrative:</h4>
+                        <p class="text-sm">
+                            Write your narrative here, addressing the rubric points: justify the inclusion of this artifact, reflect on the enhancement process, discuss challenges you faced, and highlight the course outcomes met.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                    <a href="https://github.com/your-github/enhanced-artifact" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md">View Enhanced Code &rarr;</a>
+                    <a href="https://github.com/your-github/original-artifact" target="_blank" class="bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-full text-center hover:bg-gray-300 transition-all duration-300 transform hover:scale-105 shadow-md">View Original Code &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-10 text-center">
+            <h2 class="text-3xl font-bold section-header inline-block">Contact</h2>
+            <p class="text-lg text-gray-700 mb-6">If you have any questions about my work, please feel free to reach out.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:your.email@example.com" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition-all duration-300 shadow-md transform hover:scale-105">Email Me</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-300 transition-all duration-300 shadow-md transform hover:scale-105">LinkedIn</a>
+                <a href="https://github.com/MatthewMinton" target="_blank" class="bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-300 transition-all duration-300 shadow-md transform hover:scale-105">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        &copy; <span id="year"></span> Matthew Minton. All rights reserved.
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
